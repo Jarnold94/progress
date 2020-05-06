@@ -20,6 +20,8 @@ while strData != 'Quit':
                 strData1 = strData1.split()
                 strData1 = "".join(strData1)
                 secondBoolean = False
+            else:
+                secondBoolean = False
         
         
         strReverseData = strData1[::-1] 
