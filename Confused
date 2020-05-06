@@ -1,0 +1,19 @@
+strData = str(input("Please enter a lowercase word: "))
+#strChoice = input('Define which way you want the word to be read back as. "Forwards" or "Backwards": ')
+strReverseData = strData[::-1]
+intHalfsOfData = len(strData)/ 2
+if strData == strReverseData:
+    print("Your word is a Palindrome")
+else:
+    print("Your word is not a Palindrome")
+print("\n")    
+print("Choices to display your word: Regular, Reverse, First half, Last half")
+strChoice = str(input("Enter your choice: "))
+if strChoice == "Regular" or "regular":
+    print("The word you entered is:",strData)
+elif strChoice == "Reverse" or "reverse":
+    print("The word you entered in reverse is:",strData[::-1])
+elif strChoice == "First half" or "first half":
+    print("The first half of the word is:",strData[:intHalfsofData:])
+elif strChoice == "Last half" or "last half":
+    print("The last half of the word is:",strData[intHalfsofData::])
